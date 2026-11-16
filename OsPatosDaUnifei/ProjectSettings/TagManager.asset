@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Comida
+  - ComidaMapa
+  - ComidaPato
   layers:
   - Default
   - TransparentFX
@@ -41,14 +44,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2894028753
+    locked: 0
+  - name: Objetos
+    uniqueID: 2026302961
+    locked: 0
   - name: Comida
-    uniqueID: 4194582395
-    locked: 0
-  - name: Patos
-    uniqueID: 2137077263
-    locked: 0
-  - name: Player
-    uniqueID: 1406378899
+    uniqueID: 1796329397
     locked: 0
   m_RenderingLayers:
   - Default

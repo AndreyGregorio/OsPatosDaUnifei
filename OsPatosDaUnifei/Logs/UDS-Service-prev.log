@@ -17,4 +17,66 @@ Initialising UDS system complete:
   - Command buffer size: 8192
   - Hashmap size: 4194304
 Starting Unity Data Store Application
-[Warning] Performing non-fatal cleanup. Unexpected Non-fatal signal: SIGTERM
+[Error] Failed to remove data for hash 39f8de43ec20ddf7ecafd83770215c40. Failure received from service
+ #2 print_call_stack(int)
+ #3 process_remove_multiple_command(uds_system_t*, uds_command_t*)
+ #4 uds_process_command(uds_system_t*, uds_command_t*)
+ #5 uds::ServiceCommandListener::ProcessNextCommand()
+ #6 uds::ServiceCommandListener::ExecuteCommandListenerLoop()
+ #7 uds::Service::ExecuteServiceLoop()
+ #8 main
+ #9 ???
+ #10 __libc_start_main
+ #11 _start
+
+[Error] Failed to remove data for hash 39f8de43ec20ddf7ecafd83770215c40. Failure received from service
+ #2 print_call_stack(int)
+ #3 process_remove_multiple_command(uds_system_t*, uds_command_t*)
+ #4 uds_process_command(uds_system_t*, uds_command_t*)
+ #5 uds::ServiceCommandListener::ProcessNextCommand()
+ #6 uds::ServiceCommandListener::ExecuteCommandListenerLoop()
+ #7 uds::Service::ExecuteServiceLoop()
+ #8 main
+ #9 ???
+ #10 __libc_start_main
+ #11 _start
+
+[Error] Failed to remove data for hash b493cc94cd3c14f5eb9c4c8e1a19b075. Failure received from service
+ #2 print_call_stack(int)
+ #3 process_remove_multiple_command(uds_system_t*, uds_command_t*)
+ #4 uds_process_command(uds_system_t*, uds_command_t*)
+ #5 uds::ServiceCommandListener::ProcessNextCommand()
+ #6 uds::ServiceCommandListener::ExecuteCommandListenerLoop()
+ #7 uds::Service::ExecuteServiceLoop()
+ #8 main
+ #9 ???
+ #10 __libc_start_main
+ #11 _start
+
+[Error] Failed to remove data for hash 2453a30b8768abac42b99286c52fd6a3. Failure received from service
+ #2 print_call_stack(int)
+ #3 process_remove_multiple_command(uds_system_t*, uds_command_t*)
+ #4 uds_process_command(uds_system_t*, uds_command_t*)
+ #5 uds::ServiceCommandListener::ProcessNextCommand()
+ #6 uds::ServiceCommandListener::ExecuteCommandListenerLoop()
+ #7 uds::Service::ExecuteServiceLoop()
+ #8 main
+ #9 ???
+ #10 __libc_start_main
+ #11 _start
+
+[Error] Failed to remove data for hash 2453a30b8768abac42b99286c52fd6a3. Failure received from service
+ #2 print_call_stack(int)
+ #3 process_remove_multiple_command(uds_system_t*, uds_command_t*)
+ #4 uds_process_command(uds_system_t*, uds_command_t*)
+ #5 uds::ServiceCommandListener::ProcessNextCommand()
+ #6 uds::ServiceCommandListener::ExecuteCommandListenerLoop()
+ #7 uds::Service::ExecuteServiceLoop()
+ #8 main
+ #9 ???
+ #10 __libc_start_main
+ #11 _start
+
+Unity Data Store Application Complete
+[Warning] Shutting down service while there are still connected clients, client count = 2
+Shut down UDS service system complete
