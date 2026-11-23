@@ -1,14 +1,46 @@
-# Ignora TUDO por padrão
+# =============================================================================
+# OsPatosDaUnifei — .gitignore
+#
+# Projeto Unity em OsPatosDaUnifei/ (Unity 6000.6.0f1).
+#
+# Política: ignora TUDO por padrão e libera apenas o essencial para o Unity
+# abrir e reconstruir o jogo em outra máquina.
+#
+# Versionado:
+#   OsPatosDaUnifei/Assets/           cenas, scripts, sprites, animações e .meta
+#   OsPatosDaUnifei/Packages/         manifest.json e packages-lock.json
+#   OsPatosDaUnifei/ProjectSettings/  configurações do projeto
+#   .gitignore, .gitattributes, README.md
+#
+# Ignorado (gerado/local, o Unity recria):
+#   Library/, Temp/, Obj/, Logs/, UserSettings/, MemoryCaptures/, Recordings/,
+#   Build/, Builds/, .vs/, .vscode/, *.csproj, *.slnx, backups e documentos.
+# =============================================================================
+
+# 1. Ignora todo o conteúdo do repositório.
 *
 
-# Mas NÃO ignora as pastas essenciais do Unity
-!Assets/
-!Assets/**
-!Packages/
-!Packages/**
-!ProjectSettings/
-!ProjectSettings/**
+# 2. Reabre o caminho até o projeto Unity.
+#    O Git não reabre arquivos cuja pasta pai está ignorada, por isso cada
+#    nível do caminho precisa da sua própria exceção.
+!OsPatosDaUnifei/
+!OsPatosDaUnifei/Assets/
+!OsPatosDaUnifei/Assets/**
+!OsPatosDaUnifei/Packages/
+!OsPatosDaUnifei/Packages/**
+!OsPatosDaUnifei/ProjectSettings/
+!OsPatosDaUnifei/ProjectSettings/**
 
-# NÃO ignora o próprio .gitignore e o README
+# 3. Arquivos de controle do repositório.
 !.gitignore
+!.gitattributes
 !README.md
+
+# 4. Gerado pelo Unity mesmo dentro do essencial: cenas de recuperação
+#    automática (Assets > _Recovery). Estas regras vêm por último para
+#    voltarem a valer.
+OsPatosDaUnifei/Assets/_Recovery/
+OsPatosDaUnifei/Assets/_Recovery.meta
+
+# 5. Extras opcionais: descomente o que quiser versionar fora do essencial.
+# !OsPatosDaUnifei/FASE-DO-LAGO.md

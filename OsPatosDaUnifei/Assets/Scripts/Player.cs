@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.InputSystem; // Novo sistema de input
+using UnityEngine.InputSystem; 
 
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -33,18 +33,18 @@ public class Player : MonoBehaviour
             .With("Left", "<Keyboard>/a")
             .With("Right", "<Keyboard>/d");
 
-        // Configura as Setas do Teclado
+        
         moverAcao.AddCompositeBinding("2DVector")
             .With("Up", "<Keyboard>/upArrow")
             .With("Down", "<Keyboard>/downArrow")
             .With("Left", "<Keyboard>/leftArrow")
             .With("Right", "<Keyboard>/rightArrow");
 
-        // Liga o leitor de teclas
+        
         moverAcao.Enable();
     }
 
-    // Desliga o leitor de teclas se o personagem for destruído
+    
     void OnDestroy()
     {
         if (moverAcao != null) moverAcao.Disable();
@@ -73,9 +73,9 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Velocidade no lugar do MovePosition: quem resolve o encostar na parede é a
-        // física. O personagem para limpo e desliza na diagonal, sem a tremidinha.
-        // Unity 6: linearVelocity. (Unity 2022 ou anterior: rb.velocity)
+        
+        
+        
         rb.linearVelocity = movimento * velocidade;
     }
 
